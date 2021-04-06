@@ -1,0 +1,46 @@
+
+package Students;
+
+public class StudentsNameList {
+    public String[] Names = new String [5];
+    // Insert
+    int IndexNumber;
+    void Insert(String EnterName){
+        if (IndexNumber < Names.length){
+        Names[IndexNumber++] = EnterName;
+        }
+    }
+     
+    // Traverse
+    void Traverse(){
+        for(int d = 0;d<Names.length;d++){
+            System.out.println(Names[d]+"[" +d+"]");
+        }
+    }
+    //Find
+    String Find(String SearchName){
+        String Index = "Not Found";
+        for(int d = 0;d<Names.length;d++){
+            if(Names[d]== SearchName){
+                Index = "Founded";
+            }
+        }
+        return Index;
+    }
+    //Delete
+    void Delete(int Index){
+        Names[Index] = "";
+        for(int d = Index+1;d<Names.length;d++){
+             Names[d-1]= Names[d];
+        }
+        
+         Names[Names.length -1] = "";
+        
+        
+    }
+}
+
+}
+}
+
+}
