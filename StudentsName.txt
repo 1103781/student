@@ -1,0 +1,28 @@
+
+package STUDENTSNAME;
+
+public class StudentsName {
+
+    public static void main(String[] args) {
+       StudentNamesList Bs3rd = new StudentNamesList();
+       Bs3rd.Insert("AQIL ");
+       Bs3rd.Insert("KAMALAN");
+       Bs3rd.Insert("BABA");
+       Bs3rd.Insert("ASAD");
+       Bs3rd.Insert("SAHIB");
+      
+       Bs3rd.Traverse();
+       
+      //System.out.println(Bs3rd.Find("khan"));
+     // Bs3rd.Insert("JOHN");
+
+       Bs3rd.Traverse();
+
+    }
+    
+}
+
+
+}
+
+
